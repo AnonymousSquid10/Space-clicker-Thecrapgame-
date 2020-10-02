@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1><u>SPACE CLICKER</u></h1>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML ="HighScore: " + sessionStorage.clickcount + "";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+</head>
+<body>
+<img src="https://lh3.googleusercontent.com/KOh_4moglNskk7VEap8nO_F-MuToWEV92ppjQSzEl_UrSm9Od2s1xUSdsVtxbLT6XqcwHlke09kyCTFLBy8QsalblDtE_FXipVBwnePN6Dsv5aDUg6opJP15OLC5uiTdz9DXgLUjqsfg69uxd5AfcVaQEGaU6KWENc35bzcAWEtMJmZ6DCIyIzrrLlcKUPXAKuqVDCZwD6i_M-wsdFjpOQa1xcy-nxg50TiOidduxilSkFeyIw2tPuJ53LqS2-z3dTvpSJbELOJU3_9NE6yf-EuOUQLMbIoJti5QeZfJiUCHfwQIKi3w_fMc9DhPPB8Xj4F4xybDoToHXgocLLtbvN5n2wzylN38WwvCKOUr0RC9nKLrL0e8ujG1Lal0JdwLITbLUot6M6uZkhlYR_Y2GqBmqpgyUaNR5nXEuHIB2lA9JzdqzWYPJSr0_JsMj-fI2AUnpZIHD18uzkxo_UoaKVQc0vetMfz5Qwl7lC8VEUPmMXQqhQ964P_hdXQTK6nO0iJWFVWLqDtAmfaskkHg3OHEJwTZtu8ftcO7XR3cqjBYXOr6p5T7LdOI1EL5AgdlzNxO0pAADEyC0grhNCQIu9dmQA4_qbx5R4Dz1RsL5UdE_fYHOnihGxhRJuHLaoDjnrNDnkdrbRtfCLmnmW8C0OGHeKKavwFOxe73b2wRGtJEiupa9_hD8y--nERt7w=w145-h199-no?authuser=0" alt="Billy">
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+ <style>
+      body {
+        background-image: url('https://lh3.googleusercontent.com/bGZXPSMDpeRwucG2o8dz2RaPts0EwNwjmTLwSY6PTAu293Z3yW5uLyWCE0ICF4PqVsoUEbrHThjX3BN_u0ujrfszFEZQ62TZfncrM-9_-ighkpVkgWJb0hiOYM5m4PbWX61zhS14ZPMxtdfnRLs0oGOl8FZPi2qFiFGiBg3RkgdLZ4Q8v0_xu4rxKLCTOUX0h3IQRo6PoTJh3azFFu2c-rEqQ0YVxfgZjXWuYTd2S-IBevr0qV2pBDk_z5YS78640pKofT5qQgc9nRkkOj43Ab7fuHgjF7uLWx8lZLhvxhXZUkBgGcn1pmZH2JmsLu3odcagD7-6wY6q7X0EuYOBaILXqDXxJk2Qj9sUQBsRLxoYimZrQ5TrwkopA0_GcpE4hAmPkAubXAJPplZ9eTVdHx_U49X_Yya4bVJNGNNPFsPm09q8VwlFfmDnRNJvJTR9qZbe1Rgk4G7gh3pZ_4kh2hCZIdGxz4cNtRt-7I7jedwwGALemkRS1_6vYCNogp2baAOrAs90JIdyVBAeggcpCgpBWf7RCPSYNC4WhQSzB8BvjdY39p68Y8n2jry3zpD41hSYTIEGhTdIX7W9071VTAndXXw-_agt9HKj6azlIUKH2DwsVQON5WGILWG9nFjs_Gb5K23WwXY3QxUI4dc-WT92fhfvXVUPaAVgv4n2gITkiH2oJHQfmEMEZavJrw=s250-k-rw-no');
+</body>
+</html>
